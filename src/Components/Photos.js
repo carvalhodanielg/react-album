@@ -7,22 +7,17 @@ export const Photos = ({photos}) => {
     
     return(
 
-
-
             <div>
 
                 <Link to='/'>
+
                     <br/>
-                <button>Voltar</button>
+                    <button>Voltar</button>
+
                 </Link>
                 
-                <img src={photos[id].url}></img>
-
-
-
-
-                
-                
+                    <img src={photos[id].url}></img>
+   
             </div>
 
     )

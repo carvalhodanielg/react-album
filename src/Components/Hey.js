@@ -7,37 +7,26 @@ export const Hey = ({posts, photos, loading}) => {
 
     return(
             <div>
-
-                        
-   
-
-                    <>  
+                     
                 <Link to='/'>
                 <button>Voltar</button>
                 </Link>
                 {loading &&<h1> Loading </h1>}
 
-
                 { <p> {posts[id-1].title}</p> }
                
-                {photos.map((item, key)=>(
-
-                
-
+                {photos.map((item, key)=>(          
                
                     <Link to={'/photo/'+key}> 
 
-                    <div>
-                        <img src={item.thumbnailUrl} alt=""></img>
-                    </div>
+                        <div>
+                            <img src={item.thumbnailUrl} alt=""></img>
+                        </div>
 
                     </Link>
                
                 ))}
-                </>
-
-
-                
+              
             </div>
 
     )
